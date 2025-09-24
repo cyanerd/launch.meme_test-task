@@ -246,7 +246,7 @@ export function ProfileForm() {
                 type="text"
                 placeholder="Display name"
                 value={formData.name}
-                onChange={(e) => handleInputChange('name', e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleInputChange('name', e.target.value)}
                 className="w-full bg-background/50 border-border/50 focus:border-primary"
               />
             </div>
@@ -255,7 +255,7 @@ export function ProfileForm() {
                 type="text"
                 placeholder="Telegram username or link"
                 value={formData.telegram}
-                onChange={(e) => handleInputChange('telegram', e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleInputChange('telegram', e.target.value)}
                 className="w-full bg-background/50 border-border/50 focus:border-primary"
               />
             </div>

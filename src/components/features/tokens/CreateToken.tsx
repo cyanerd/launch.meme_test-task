@@ -261,7 +261,7 @@ export function CreateToken() {
                 name="name"
                 placeholder="Token name"
                 value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, name: e.target.value })}
                 required
                 className="w-full bg-background/50 border-border/50 focus:border-primary"
               />
@@ -269,7 +269,7 @@ export function CreateToken() {
                 name="symbol"
                 placeholder="Token symbol (ticker)"
                 value={formData.symbol}
-                onChange={(e) => setFormData({ ...formData, symbol: e.target.value.toUpperCase() })}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, symbol: e.target.value.toUpperCase() })}
                 required
                 className="w-full bg-background/50 border-border/50 focus:border-primary"
               />
@@ -277,7 +277,7 @@ export function CreateToken() {
                 name="description"
                 placeholder="Token description"
                 value={formData.description}
-                onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setFormData({ ...formData, description: e.target.value })}
                 maxLength={100}
                 rows={4}
                 className="w-full resize-none bg-background/50 border-border/50 focus:border-primary"
@@ -299,21 +299,21 @@ export function CreateToken() {
                 name="telegram"
                 placeholder="Telegram link"
                 value={formData.telegram}
-                onChange={(e) => setFormData({ ...formData, telegram: e.target.value })}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, telegram: e.target.value })}
                 className="w-full bg-background/50 border-border/50 focus:border-primary"
               />
               <Input
                 name="twitter"
                 placeholder="Twitter (X) link"
                 value={formData.x}
-                onChange={(e) => setFormData({ ...formData, x: e.target.value })}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, x: e.target.value })}
                 className="w-full bg-background/50 border-border/50 focus:border-primary"
               />
               <Input
                 name="website"
                 placeholder="Website link"
                 value={formData.website}
-                onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, website: e.target.value })}
                 className="w-full bg-background/50 border-border/50 focus:border-primary"
               />
             </div>
@@ -331,7 +331,7 @@ export function CreateToken() {
                 placeholder="Initial buy amount (SOL)"
                 type="number"
                 value={buyAmount}
-                onChange={(e) => setBuyAmount(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setBuyAmount(e.target.value)}
                 className="w-full bg-background/50 border-border/50 focus:border-primary"
               />
             </div>
