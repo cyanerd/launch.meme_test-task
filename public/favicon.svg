@@ -1,0 +1,22 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(210, 100%, 60%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(180, 100%, 40%);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background with gradient and rounded corners -->
+  <rect width="40" height="40" rx="12" ry="12" fill="url(#gradient-primary)" />
+
+  <!-- Zap icon centered -->
+  <g transform="translate(20, 20)">
+    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          transform="translate(-11, -11) scale(1.0)" />
+  </g>
+</svg>
